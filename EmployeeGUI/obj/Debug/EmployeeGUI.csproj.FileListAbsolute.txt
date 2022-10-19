@@ -1,0 +1,10 @@
+C:\Users\jpscott\Desktop\Chapter12Pretest\Employee\EmployeeGUI\bin\Debug\EmployeeGUI.exe.config
+C:\Users\jpscott\Desktop\Chapter12Pretest\Employee\EmployeeGUI\bin\Debug\EmployeeGUI.exe
+C:\Users\jpscott\Desktop\Chapter12Pretest\Employee\EmployeeGUI\bin\Debug\EmployeeGUI.pdb
+C:\Users\jpscott\Desktop\Chapter12Pretest\Employee\EmployeeGUI\obj\Debug\EmployeeGUI.csproj.AssemblyReference.cache
+C:\Users\jpscott\Desktop\Chapter12Pretest\Employee\EmployeeGUI\obj\Debug\EmployeeGUI.frmEmployee.resources
+C:\Users\jpscott\Desktop\Chapter12Pretest\Employee\EmployeeGUI\obj\Debug\EmployeeGUI.Properties.Resources.resources
+C:\Users\jpscott\Desktop\Chapter12Pretest\Employee\EmployeeGUI\obj\Debug\EmployeeGUI.csproj.GenerateResource.cache
+C:\Users\jpscott\Desktop\Chapter12Pretest\Employee\EmployeeGUI\obj\Debug\EmployeeGUI.csproj.CoreCompileInputs.cache
+C:\Users\jpscott\Desktop\Chapter12Pretest\Employee\EmployeeGUI\obj\Debug\EmployeeGUI.exe
+C:\Users\jpscott\Desktop\Chapter12Pretest\Employee\EmployeeGUI\obj\Debug\EmployeeGUI.pdb
