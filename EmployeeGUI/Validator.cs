@@ -27,6 +27,7 @@ namespace EmployeeGUI
             {
                 msg += name + " is a required field." + LineEnd;
             }
+
             return msg;
         }
 
@@ -37,6 +38,7 @@ namespace EmployeeGUI
             {
                 msg += name + " must be a valid decimal value." + LineEnd;
             }
+
             return msg;
         }
 
@@ -48,6 +50,7 @@ namespace EmployeeGUI
         //    {
         //        msg += name + " must be a valid integer value." + LineEnd;
         //    }
+
         //    return msg;
         //}
 
@@ -62,6 +65,7 @@ namespace EmployeeGUI
                     msg += name + " must be between " + min + " and " + max + "." + LineEnd;
                 }
             }
+
             return msg;
         }
     }

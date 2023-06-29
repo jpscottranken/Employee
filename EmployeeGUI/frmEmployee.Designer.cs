@@ -52,12 +52,13 @@
             this.txtTotalGrossPay = new System.Windows.Forms.TextBox();
             this.txtTotalEmployees = new System.Windows.Forms.TextBox();
             this.bllTitle = new System.Windows.Forms.Label();
+            this.btnShowList = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCalculate
             // 
             this.btnCalculate.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculate.Location = new System.Drawing.Point(184, 520);
+            this.btnCalculate.Location = new System.Drawing.Point(65, 520);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(212, 69);
             this.btnCalculate.TabIndex = 4;
@@ -69,7 +70,7 @@
             // 
             this.btnClear.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnClear.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(534, 520);
+            this.btnClear.Location = new System.Drawing.Point(687, 520);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(212, 69);
             this.btnClear.TabIndex = 5;
@@ -80,7 +81,7 @@
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(907, 520);
+            this.btnExit.Location = new System.Drawing.Point(1001, 520);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(212, 69);
             this.btnExit.TabIndex = 6;
@@ -320,6 +321,18 @@
             this.bllTitle.Text = "AWD1100 - Chapter 12 Pretest Creating An Employee Class";
             this.bllTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnShowList
+            // 
+            this.btnShowList.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnShowList.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowList.Location = new System.Drawing.Point(363, 520);
+            this.btnShowList.Name = "btnShowList";
+            this.btnShowList.Size = new System.Drawing.Size(212, 69);
+            this.btnShowList.TabIndex = 24;
+            this.btnShowList.Text = "Show List";
+            this.btnShowList.UseVisualStyleBackColor = true;
+            this.btnShowList.Click += new System.EventHandler(this.btnShowList_Click);
+            // 
             // frmEmployee
             // 
             this.AcceptButton = this.btnCalculate;
@@ -328,6 +341,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CancelButton = this.btnClear;
             this.ClientSize = new System.Drawing.Size(1267, 620);
+            this.Controls.Add(this.btnShowList);
             this.Controls.Add(this.bllTitle);
             this.Controls.Add(this.txtAvgGrossPay);
             this.Controls.Add(this.txtHighGrossPay);
@@ -354,6 +368,7 @@
             this.Controls.Add(this.btnCalculate);
             this.Name = "frmEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "////////////////////////////////////////////";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,6 +400,7 @@
         private System.Windows.Forms.TextBox txtTotalGrossPay;
         private System.Windows.Forms.TextBox txtTotalEmployees;
         private System.Windows.Forms.Label bllTitle;
+        private System.Windows.Forms.Button btnShowList;
     }
 }
 

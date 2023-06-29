@@ -128,15 +128,54 @@ namespace EmployeeGUI
         {
             string outputStr = "Currently Added Employee\n\n";
 
-            outputStr += "First Name:\t" + employee.GetFirstName() + "\n";
-            outputStr += "Last  Name:\t" + employee.GetLastName() + "\n";
-            outputStr += "Hrs Worked:\t" + employee.GetHoursWorked() + "\n";
-            outputStr += "Hrly  Rate:\t" + employee.GetHourlyRate() + "\n";
-            outputStr += "Gross  Pay:\t" + employee.CalculateGrossPay().ToString("c");
+            //outputStr += "First Name:\t" + employee.FirstName + "\n";
+            //outputStr += "Last  Name:\t" + employee.LastName + "\n";
+            //outputStr += "Hrs Worked:\t" + employee.HoursWorked + "\n";
+            //outputStr += "Hrly  Rate:\t" + employee.HourlyRate + "\n";
+            //outputStr += "Gross  Pay:\t" + employee.CalculateGrossPay().ToString("c");
 
-            MessageBox.Show(outputStr, "FINAL LIST STATS",
+            outputStr += employee;
+
+            MessageBox.Show(outputStr, "THIS EMPLOYEE'S STATS",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information);
+
+            clearAndSetFocus();
+        }
+
+        private void printListContents()
+        {
+            //string outputStr = "LIST CONTENTS";
+            //foreach (Employee emp in employees)
+            //{
+            //    outputStr += ("\n\nName: " + emp.FirstName + " " + emp.LastName + "\n" +
+            //                     "Hours: " + emp.HoursWorked.ToString("n2") + "\n" +
+            //                      "Rate: " + emp.HourlyRate.ToString("c") + "\n" +
+            //                     "Gross: " + emp.CalculateGrossPay().ToString("c"));
+            //}
+
+            //MessageBox.Show(outputStr, "TOTALS",
+            //                MessageBoxButtons.OK,
+            //                MessageBoxIcon.Information);
+
+            string outputStr = "LIST CONTENTS\n\n";
+            foreach (Employee emp in employees)
+            {
+                outputStr += emp;
+            }
+
+            MessageBox.Show(outputStr, "TOTALS",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+
+
+            clearAndSetFocus();
+
+        }
+
+        private void btnShowList_Click(object sender, EventArgs e)
+        {
+            printListContents();
         }
 
         private void btnClear_Click(object sender, EventArgs e)

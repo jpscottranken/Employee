@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EmployeeGUI
 {
@@ -10,59 +6,46 @@ namespace EmployeeGUI
     {
         //  Program constants
         const decimal MAXSTRAIGHT  = 40.00M;
-        const decimal OVERTIMERATE = 1.50M;
+        const decimal OVERTIMERATE =  1.50M;
 
-        //  Instance variables
-        private string  _firstName;
-        private string  _lastName;
-        private decimal _hoursWorked;
-        private decimal _hourlyRate;
         private decimal _grossPay;
 
         //  Constructor
         public Employee(string fn, string ln, decimal hw, decimal hr)
         {
-            _firstName   = fn;
-            _lastName    = ln;
-            _hoursWorked = hw;
-            _hourlyRate  = hr;
+            FirstName   = fn;
+            LastName    = ln;
+            HoursWorked = hw;
+            HourlyRate  = hr;
         }
 
-        //  Getters
-        public string GetFirstName()
-        {
-            return _firstName;
-        }
-
-        public string GetLastName()
-        {
-            return _lastName;
-        }
-
-        public decimal GetHoursWorked()
-        {
-            return _hoursWorked;
-        }
-
-        public decimal GetHourlyRate()
-        {
-            return _hourlyRate;
-        }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public decimal HoursWorked { get; set; }
+        public decimal HourlyRate { get; set; }
 
         public decimal CalculateGrossPay()
         {
-            if (_hoursWorked <= MAXSTRAIGHT)
+            if (HoursWorked <= MAXSTRAIGHT)
             {   //  Employee worked <= 40 hours. No OT
-                _grossPay = _hoursWorked * _hourlyRate;
+                _grossPay = HoursWorked * HourlyRate;
             }
             else
             {   //  Emploee worked > 40 hours. Has OT coming.
-                _grossPay = (MAXSTRAIGHT * _hourlyRate) +
-                            ((_hoursWorked - MAXSTRAIGHT) *
-                              _hourlyRate * OVERTIMERATE);
+                _grossPay = (MAXSTRAIGHT * HourlyRate) +
+                            ((HoursWorked - MAXSTRAIGHT) *
+                              HourlyRate * OVERTIMERATE);
             }
 
             return _grossPay;
+        }
+
+        public override string ToString()
+        {
+            return "NAME: " + FirstName + " " + LastName + "\n" +
+                  "HOURS: " + HoursWorked.ToString("n2") + "\n" +
+                   "RATE: " + HourlyRate.ToString("c")   + "\n" +
+                  "GROSS: " + _grossPay.ToString("c")    + "\n\n";
         }
     }
 }
